@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak personal website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 13);
+            color: white;
+            font-family: math;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(7, 7, 47);
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(153, 153, 266);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin:40px;
+           
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 110px 0;
+        }
+        
+
+        .rightSection img {
+            margin: 50px;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+        .text_gray{
+            color: rgb(93, 74, 139);
+        }
+        #element{
+            color: blueviolet; 
+        }
+        .secondSection{
+            max-width: 80vh;
+            margin:0 135px;
+            height: 80vh;
+
+        }
+        .secondSection h1{
+            font-size: 4vh;
+        }
+
+        .d{
+            padding:25px
+        }
+         .secondSection .divbox{
+            background-color: white;
+            width: 80vh;
+            height: 2px;
+            margin: 56px 0;;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Deepak's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Projects</a> </li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+        
+
+            <div class="leftSection">
+                
+                Hello , I am <span class="purple">Deepak Kumar</span>
+                <div> I am web Developer.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="d.png" alt="photo of devloper" width="110%">
+            </div>
+        </section>
+        <hr style="border: 0; height: 2px; background-color: rgb(52 60 124); margin:3px 54px ;">
+        <section class="secondSection">
+            <div class="d">
+            <span class="text_gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+        </div>
+        <div class="divBox"></div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [ 'full stack developer,','intern.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
